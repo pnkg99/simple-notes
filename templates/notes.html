@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Notes</title>
+    <style>
+      /* Add some basic styling for the notes container */
+      .notes-container {
+        width: 80%;
+        margin: 20px auto;
+      }
+
+      /* Style the individual note containers */
+      .note {
+        background-color: #f9f9f9;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px #c9c9c9;
+      }
+
+      /* Style the note title */
+      .note h3 {
+        margin-top: 0;
+      }
+
+      /* Style the note writer */
+      .note p.writer {
+        font-style: italic;
+        margin-bottom: 10px;
+      }
+      .note p.date {
+        font-style: underline;
+        margin-bottom: 5px;
+      }
+      .note p.content {
+        border-radius : 25px;
+        border-style: solid;
+        border-color : black;
+        border-width : thin;
+        padding-bottom : 30px;
+        padding-top : 30px;
+        padding-left : 10px;
+        padding-right : 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Notes</h1>
+    <div class="notes-container">
+      {% for note in notes %}
+        <div class="note">
+          <h3>{{ note.title }}</h3>
+          <p class="writer">by {{ note.writer }}</p>
+          <p class="content">{{ note.content }}</p>
+          <p class="date">{{note.date}} </p>
+        </div>
+      {% endfor %}
+    </div>
+  </body>
