@@ -59,7 +59,6 @@ class MyHandler(BaseHTTPRequestHandler):
             json.dump(notes, f, indent=4)
             
         self.add_note()
-
         
     def add_note(self):
         message = "<h2>Note added successfully!</h2>"
