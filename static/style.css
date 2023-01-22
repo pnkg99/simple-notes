@@ -1,13 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Add Note</title>
-    <style>
-      /* Add some basic styling for the form */
-      body {
-        background-image: url("https://wallpaperforu.com/wp-content/uploads/2020/08/vector-wallpaper-20082715095224-scaled.jpg");
-      }
-      form {
+/* Add some basic styling for the form */
+body {
+    form {
         margin: 20px auto;
         width: 80%;
         padding: 20px;
@@ -16,7 +9,7 @@
         border-radius: 10px;
         box-shadow: 0px 0px 20px #2c2c2c;
       }
-
+      
       /* Style the form labels and inputs */
       label, input[type="text"], textarea {
         display: block;
@@ -28,58 +21,42 @@
         margin-bottom: 10px;
         background-color: aliceblue;
       }
-
+      
       label {
         font-weight: bold;
       }
-
+      
       input[type="text"] {
         padding: 5px;
         width: 100%;
         box-sizing: border-box;
       }
-
+      
       textarea {
         width: 100%;
         padding: 5px;
         min-height: 150px;
         box-sizing: border-box;
         resize: none;
-        background-color:rgba(240, 248, 255, 0.466)
+        background-color:rgba(240, 248, 255, 0.466);
       }
-
+      
       /* Style the submit button */
       input[type="submit"] {
         padding: 10px 20px;
-        background-color: #bb1e99;
+        background-color: #af4c91;
         color: white;
         border: none;
         border-radius: 5px;
         cursor: pointer;
         float: right;
       }
-
+      
       input[type="submit"]:hover {
-        background-color: #6d144f;
+        background-color: #75265e;
       }
-    .bozijabiljka {
-        background-color: #8e3e8a
-    }
-    </style>
-  </head>
-  <body>
-    <h1>Add Note</h1>
-    <form action="/add_note" method="post">
-      <label for="writer">Writer:</label>
-      <input type="text" id="writer" name="writer" class="bozijabiljka"> 
+      .bozijabiljka {
+        background-color: #cf97cc38;
+      }
       
-      <label for="title">Title:</label>
-      <input type="text" id="title" name="title" class="bozijabiljka">
-      
-      <label for="content">Note:</label>
-      <textarea id="content" name="content" class="bozijabiljka"></textarea>
-      
-      <input type="submit" value="Add Note">
-    </form>
-</body>
-</html>
+}
